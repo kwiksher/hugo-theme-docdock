@@ -1,0 +1,4 @@
+[submodule "hugo/themes/hugo-theme-docdock"]
+	path = hugo/themes/hugo-theme-docdock
+	url = https://github.com/vjeantet/hugo-theme-docdock
+	branch = master
