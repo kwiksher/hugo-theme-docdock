@@ -1,5 +1,13 @@
 # Hugo
 
+- hugo/themes配下に、docdockのテーマをgit submodule してあります。
+
+  https://github.com/vjeantet/hugo-theme-docdock
+
+  ```
+  git submodule update -i
+  ```
+
 - ローカルで確認
 
   ```
@@ -90,3 +98,7 @@ hugo-theme-docdock のテーマを設定してあります
 Table Of Content
 
 - md ファイルにある {{% toc %}}の記述は、hugo 用です。VS Code のプレビューでは表示されません。
+
+ページ内のヘッダーが2階層まで表示されます。
+
+<img src="img/2021-12-21-18-51-14.png" width="300">
