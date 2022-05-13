@@ -114,3 +114,24 @@ xxx.md では、{{}}のショートコードが必要ですが、_index.mdでは
 -  https://github.com/skc-syscore/skc-proj/tree/main/hugo
 
   <img src="img/2021-10-19-11-57-17.png" width="600">
+
+
+## PDF
+
+outline works with h1, h2 ... .
+
+For pdf's bookmakr, titles of pages should be formatted according to the nest levels of folders.
+
+- src
+  - _index.html
+  - chapter01/_index.md -- (h1)
+    - page.md -- (h2)
+    - folder/
+      - index.html (h2)
+      - page  -- (h3)
+
+```
+cd hugo
+
+wkhtmltopdf --outline-depth 4 ../docs/all/index.html  --allow ../docs 3d_audio.pdf
+```
